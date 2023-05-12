@@ -1,0 +1,101 @@
+
+#objectives{
+color:black;
+font-size: 16px;
+
+}
+#key-audience {
+    color: black;
+font-size: 16px;
+}
+#profisional-structure {
+    color: black;
+font-size: 16px;
+}
+#functional-structure {
+    color: black;
+font-size: 16px;
+}
+#competitive-analysis {
+    color: black;
+font-size: 16px;
+}
+button{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+
+}
+nav {
+   
+    /* make it stick */
+        position: -webkit-sticky;
+        top: 0;
+        /* in front of all other elements */
+        z-index: 99;
+        /* set background */
+        background-color: white;
+        padding: 10px 5%;
+    
+        /* define flex */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   
+}
+#register{
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+    background-color: green;
+}
+.booking {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../img/package-1.jpgS);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    color: white;
+}
+
+.text {
+    color: white;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: -500px;
+    background-color: black;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    border: 5px solid #029c91;
+    opacity: 0%;
+    transition: all 0.25s ease-out;
+}
+
+.show-toast {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.toast-active {
+    right: 80px;
+    opacity: 100%;
+}
+
+.close-button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

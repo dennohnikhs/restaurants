@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About restaurant finders</title>
+
+    <!-- bootsrap online cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- google web-fonts cdn -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Font+Name"
+    />
+
+    <!-- link to the styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- customized bootrap stylesheet -->
+    <link rel="stylesheet" href="../css/bootrap.min.css" />
+  </head>
+  <body>
+        <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block ">
+      <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <small class="me-3 text-light"
+              ><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York,
+              USA</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small
+            >
+            <small class="text-light"
+              ><i class="fa fa-envelope-open me-2"></i>info@restaurantfinder.com</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-twitter fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-facebook-f fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-linkedin-in fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-instagram fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm  btn-outline-light btn-sm-square rounded-circle"
+              href=""
+              ><i class="fab fa-youtube fw-normal"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+  <!-- Nav bar Start -->
+ <nav
+      class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-3 " id="mainNav""
+      style="overflow: initial;
+    color: #f2f2f2;
+    font-size: 20px; 
+     background-color: light-gray;
+    transition: 1s;  
+    background-color: rgb(243, 229, 229);
+    color: white;
+    "
+    >
+       <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0">
+                  <i class="fa fa-map-marker-alt me-3">
+                  </i>Restaurants</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            
+
+      <a class="collapse navbar-collapse" id="navbarCollapse">
+        <a class="navbar-nav ms-auto py-4">
+          <a class="container-fluid">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="showCountries()"class="nav-link" href="countries-listings.html"
+                  style="
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;  background-color: light-gray;
+    transition: 1s;  background-color: rgb(243, 229, 229);
+    color: rgb(117, 105, 105);
+    border-radius:20px
+    ">Countries</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    role="button"
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="restaurant.html">Restaurant Listings</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="restaurant_details.html">Restaurant details</a>
+                    </li>
+                    <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
+                    <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link btn btn-primary btn-sm rounded-pill py-2 px-4 active" href="register.html">Register</a>
+                </li>
+              </ul>
+             
+            
+          
+        </a>
+        
+      </a>
+      
+
+    </nav>
+
+   
+  <!-- Nav bar end -->
+<!-- booking start -->
+
+    <!-- Booking Start -->
+    <form action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post">
+      <!-- determine what form layout received from the email box -->
+     <input type="hidden" name="_template" value="box">
+     
+      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" style="src: url('');">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">We value our customers' feedback and appreciate any comments or suggestions you may have. After you have enjoyed your meal at our restaurant, please take a few moments to fill out our customer survey. Your feedback will help us continue to provide the best dining experience possible. Thank you for choosing us for your dining needs, and we look forward to seeing you again soon!</p>
+                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="index.html">Read More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">Book Restaurant of your choice</h1>
+                        <form>
+                          <!-- disable recapcha  -->
+                              <input type="hidden" name="_captcha" value="false">
+                              <!-- you can choose to direct the sender to your own page say a thankyou page so you place your hosting url here-->
+                              <!-- <input type="hidden" name="_next" value="https://formsubmit.co/website/thanks.html"> -->
+                              <!--  -->
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" required name="name" id="name" placeholder="Your Name">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent" required name="email" id="email" placeholder="Your Email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" required name="datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent"  name="name" required id="select1">
+                                            <option value="1">class A </option>
+                                            <option value="2">class B </option>
+                                            <option value="3">class B </option>
+                                        </select>
+                                        <label for="select1">Restaurants</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input class="form-control bg-transparent" placeholder="Special Request" name="message,questions" required id="message" style="height: 100px"></input>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-light w-100 py-3 text-uppercase" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <!-- Booking Start -->
+        
+<!-- booking end -->
+
+    <!-- back to top  -->
+    <a href="#" class="btn btn-lg btn-info btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- javascript link-->
+    <script src="./index.js"></script>
+
+    
+  </body>
+</html>
