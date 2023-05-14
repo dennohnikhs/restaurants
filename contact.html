@@ -194,7 +194,7 @@
   <!-- Nav bar end -->
        <!-- Contact Start -->
     <form action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post">
-<!-- https://formsubmit.co/form/submission -->
+
       <div class="container-xxl py-5">
         <div class="container">
         
@@ -204,8 +204,7 @@
                 <h1 class="mb-5 text-primary">Contact For Any Query</h1>
             </div>
             <div class="row g-4">
-                <input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
+                
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5>Get In Touch</h5>
                     <p class="mb-4">We greatly appreciate your taking the time to complete this form.</p>
@@ -245,30 +244,31 @@
                 </div>
                
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row g-3 background-image">
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input class="form-control" placeholder=" name" name="name" id="name" required style="color:blue
-                                    "></input>
-                                    <label for="name">Name</label>
-                                </div>
+                        <div class="row g-2 background-image">
+                          <input type="hidden" name="_subject" value="New Email!">
+                          <input type="hidden" name="_next" value="https://restaurants-dblkfs1fv-davidsonlangat316-gmailcom.vercel.app/thankyou.html">
+                          <div class="col-12">
+                            <div class="form-floating">
+                              <label for="name">Name</label>
+                              <input type="text" class="form-control"  name="name" id="name" required style="color:black">
+                            </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-floating">
-                                    <input class="form-control" placeholder="email"name="email" id="subject" required style="height: 70px;color:blue"></input>
-                                    <label for="email">Email</label>
+                              <div class="form-floating">
+                                <label for="email">Email</label>
+                                    <input class="form-control"  name="email" id="subject" required style="height: 70px;color:black">
                                 </div>
                             </div>
-       <input type="hidden" name="_next" value="https://formsubmit.co/form/submission/thankyou.html">
                             
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input class="form-control" placeholder=" Message" name="message,questions" id="message" required style="height: 100px;color:blue"></input>
+                                    <input class="form-control"  name="message" id="message" required style="height: 100px;color:black"></input>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
+                             
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit" style="border-radius: 2rem;">Send</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit" style="border-radius: 2rem;">Submit</button>
                             </div>
                         </div>
                         </div>
@@ -290,7 +290,7 @@
 
 
     <!-- javascript link-->
-    <script src="./index.js"></script>
+    <script src="/index.js"></script>
 
     
 </body>

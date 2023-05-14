@@ -17,24 +17,11 @@ function showCountries() {
 
   xhr.send();
 }
-// function showToast() {
-//   const toast = document.getElementById("toast");
-//   const addToast = document.getElementById("show-toast");
-//   addToast.addEventListener("click", function () {
-//     toast.classList.add("toast-active");
-//   });
+
+// function registrationSuccess() {
+//   const message = "Registered successfully!!";
+//   const createdDiv = document.createElement("div");
+//   createdDiv.innerHTML = message;
+//   let displayedMessage = document.getElementById("toast-message");
+//   displayedMessage.append(createdDiv);
 // }
-// function closeToast() {
-//   const toast = document.getElementById("toast");
-//   const buttonClose = document.getElementById("close-button");
-//   buttonClose.addEventListener("click", function () {
-//     toast.classList.remove("toast-active");
-//   });
-// }
-function registrationSuccess() {
-  const message = "Registered successfully!!";
-  const createdDiv = document.createElement("div");
-  createdDiv.innerHTML = message;
-  let displayedMessage = document.getElementById("toast-message");
-  displayedMessage.append(createdDiv);
-}
