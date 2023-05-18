@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact page</title>
 
+
     <!-- bootsrap online cdn -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -29,6 +30,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    
     <!-- Icon Font Stylesheet -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
@@ -193,7 +195,11 @@
 
   <!-- Nav bar end -->
        <!-- Contact Start -->
-    <form action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post">
+        <!-- action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post" -->
+         <div class="d-flex align-items-center mb-4 d-flex align-items-center justify-content-center flex-shrink-0 bg-white" id="contact-goodbye">
+                        </div>
+                       
+    <form id="form">
 
       <div class="container-xxl py-5">
         <div class="container">
@@ -202,6 +208,8 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
                 <h1 class="mb-5 text-primary">Contact For Any Query</h1>
+                <h6 class="section-title bg-white text-center text-info px-3" id="contact-success" style="align-content: end;"></h6>
+
             </div>
             <div class="row g-4">
                 
@@ -245,53 +253,68 @@
                
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="row g-2 background-image">
-                          <input type="hidden" name="_subject" value="New Email!">
-                          <input type="hidden" name="_next" value="https://restaurants-dblkfs1fv-davidsonlangat316-gmailcom.vercel.app/thankyou.html">
+                           <div class="form-menu">
+                              <label for="country">
+                                <select  style="overflow-y: auto;
+                                                      width: 500px;
+                                                                                  
+                                                      ">
+                                    <option value="" name="country"    id="country" selected hidded required >Select Country</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="INDIA">INDIA</option>
+                                    <option value="EUROPE">EUROPE</option>
+                                    <option value="KENYA">KENYA</option>
+
+
+                                    </select>
+                              </label>
+                            </div>
+                          
                           <div class="col-12">
-                            <div class="form-floating">
-                              <label for="name">Name</label>
-                              <input type="text" class="form-control"  name="name" id="name" required style="color:black">
+                            <div class="form-menu">
+                              <label for="name"></label>
+                              <input type="text" class="form-control"   placeholder="your name" name="name" id="name" required style="color:black">
                             </div>
                             </div>
                             <div class="col-12">
-                              <div class="form-floating">
-                                <label for="email">Email</label>
-                                    <input class="form-control"  name="email" id="subject" required value="https://restaurants-dblkfs1fv-davidsonlangat316-gmailcom.vercel.app/thankyou.html" style="height: 70px;color:black">
+                              <div class="form-menu">
+                                <label for="email"></label>
+                                    <input class="form-control"  name="email" id="email"  placeholder="your email address" required  style="height: 70px;color:black">
                                 </div>
                             </div>
-                            
                             <div class="col-12">
-                                <div class="form-floating">
-                                    <input class="form-control"  name="message" id="message" required style="height: 100px;color:black"></input>
-                                    <label for="message">Message</label>
+                              <div class="form-menu">
+                                  <label for="message"></label>
+                                    <input class="form-control"  name="message" id="message" required  placeholder="write your message here" style="height: 100px;color:black"></input>
                                 </div>
-                            </div>
+                              </div>
+                              <div class="col-12">
+                                <button class="btn btn-primary w-100 py-1" type="submit" id="submit-btn" style="border-radius: 2rem;">Send</button>
+                              </div>
+                              
+                        </div>
                              
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit" style="border-radius: 2rem;">Submit</button>
+                              
                             </div>
+                          </div>
+                          
                         </div>
-                        </div>
-                        
                       </div>
                     </div>
-                  </div>
+                    
+                  </form>
                   
-                </form>
-      
-    <!-- Contact End -->
+                  <!-- Contact End -->
 
-    <!-- back to top  -->
-    <a href="#" class="btn btn-lg btn-info btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    
     <!-- JavaScript Libraries -->
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <!-- javascript link-->
-    <script src="/index.js"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"
+  ></script>
+  <script src="contact.js"></script>
+  
     
 </body>
 </html>

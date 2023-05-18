@@ -372,21 +372,26 @@
         </div>
     </div>
     <!-- Service End -->
+     
        <!-- Contact Start -->
-    <form action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post">
-       
+        <!-- action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post" -->
+        
+                       
+    <form id="form">
 
-      <div class="container-xxl py-5">
+      <div class="container-xxl py-5" id="fade-contact-main">
         <div class="container">
         
 
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
-                <h1 class="mb-5 text-primary">Contact For Any Query</h1>
+                <h1 class="mb-5 text-primary" id="hide-one">Contact For Any Query</h1>
+                <h6 class="section-title bg-white text-center text-info px-3"  style="align-content: end;"></h6>
+                <h2 id="success" style="color:blue;font-size: 10px;"></h2>
+
             </div>
             <div class="row g-4">
-                <input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
+                
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5>Get In Touch</h5>
                     <p class="mb-4">We greatly appreciate your taking the time to complete this form.</p>
@@ -426,41 +431,47 @@
                 </div>
                
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row g-3 background-image">
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input class="form-control" placeholder=" name" name="name" id="name" required style="color:blue
-                                    "></input>
-                                    <label for="name">Name</label>
-                                </div>
+                        <div class="row g-2 background-image">
+                          
+                          <div class="col-md-12">
+                            <div class="footer-menu">
+                              <label for="name"></label>
+                              <input type="text" class="form-control"  placeholder="your name" name="name" id="name" required style="color:black">
+                            </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-floating">
-                                    <input class="form-control" placeholder="email"name="email" id="subject" required style="height: 70px;color:blue"></input>
-                                    <label for="email">Email</label>
+                              <div class="form-menu">
+                                <label for="email"></label>
+                                    <input class="form-control"  name="email" placeholder="your email address" id="email" required  style="height: 70px;color:black">
+                                </div>
+                            </div>
+                             <div class="col-12">
+                              <div class="form-menu">
+                                <label for="email"></label>
+                                    <input class="form-control"  name="country" placeholder="your country" id="country" required style="height: 70px;color:black">
                                 </div>
                             </div>
                             
                             <div class="col-12">
-                                <div class="form-floating">
-                                    <input class="form-control" placeholder=" Message" name="message,questions" id="message" required style="height: 100px;color:blue"></input>
-                                    <label for="message">Message</label>
+                                <div class="form-menu">
+                                    <input class="form-control"  name="message" placeholder="write your message here" id="message" required style="height: 100px;color:black"></input>
+                                    <label for="message"></label>
                                 </div>
+                              </div>
+                             
+                              <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit" id="submit-btn" style="border-radius: 2rem;">Submit</button>
+                              </div>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit" "alert alert-primary" role="alert" style="border-radius: 2rem;">Send</button>
-                            </div>
+                          </div>
+                          
                         </div>
-                        </div>
-                        
                       </div>
                     </div>
-                  </div>
+                    
+                  </form>
                   
-                </form>
-      
-    <!-- Contact End -->
-    
+                  <!-- Contact End -->
     <!-- Booking Start -->
     <form action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post">
       <!-- determine what form layout received from the email box -->

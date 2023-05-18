@@ -18,10 +18,48 @@ function showCountries() {
   xhr.send();
 }
 
-// function registrationSuccess() {
-//   const message = "Registered successfully!!";
-//   const createdDiv = document.createElement("div");
-//   createdDiv.innerHTML = message;
-//   let displayedMessage = document.getElementById("toast-message");
-//   displayedMessage.append(createdDiv);
-// }
+$("document").ready(() => {
+  $("#form").submit((e) => {
+    e.preventDefault();
+    let nameInput = $("#name").val();
+    // let emailInput = $("#email".val());
+    // let messageInput = $("#message".val());
+    // let countryInput = $("#country".val());
+    $("#hide-one").hide();
+    $("#success").html(
+      "Thank you" +
+        " " +
+        nameInput +
+        " " +
+        " for contacting Us our team will get back to you shortly."
+    );
+  });
+});
+
+// use query selector method to select the form
+// const form = document.querySelector("form");
+// add eventlistener to the form submit button to trigger that event
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   const formData = new FormData(form);
+
+//   for (item of formData) {
+//     console.log(item[0], item[1]);
+//   }
+//   fetch("https://your server domain/api/users", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(formData),
+//   })
+//     .then((res) => {
+//       res.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// });
