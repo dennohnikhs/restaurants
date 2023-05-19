@@ -6,24 +6,27 @@ function handleForm(event) {
 form.addEventListener("submit", handleForm);
 
 function loadCountriesSelect() {
-  fetch("https://restcountries.com/v2/all")
-    .then((res) => res.json())
-    .then((countries) => {
-      const selectElement = document.getElementById("countries-selector");
-      selectElement.innerHTML = "";
+  $("document").ready(() => {
+    fetch("https://restcountries.com/v2/all")
+      .then((res) => res.json())
+      .then((countries) => {
+        const selectElement = document.getElementById("countries-selector");
+        selectElement.innerHTML = "";
 
-      countries.forEach((country) => {
-        const optionElement = document.createElement("option");
-        optionElement.setAttribute("value", country.name);
-        optionElement.innerHTML = country.name;
+        countries.forEach((country) => {
+          const optionElement = document.createElement("option");
+          optionElement.setAttribute("value", country.name);
+          optionElement.innerHTML = country.name;
 
-        selectElement.appendChild(optionElement);
+          selectElement.appendChild(optionElement);
+        });
+      })
+      .catch((err) => {
+        console.log("Error occurred while fetching countries", err);
       });
-    })
-    .catch((err) => {
-      console.log("Error occurred while fetching countries", err);
-    });
+  });
 }
+
 function insert() {
   $(document).ready(() => {
     //make an array of languages to insert multiple checkbox values of languages
