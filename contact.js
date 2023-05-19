@@ -1,4 +1,55 @@
+//prevent form from submit or refresh
+let form = document.getElementById("form");
+function handleForm(event) {
+  event.preventDefault();
+}
+form.addEventListener("submit", handleForm);
+
+function loadCountriesSelect() {
+  fetch("https://restcountries.com/v2/all")
+    .then((res) => res.json())
+    .then((countries) => {
+      const selectElement = document.getElementById("countries-selector");
+      selectElement.innerHTML = "";
+
+      countries.forEach((country) => {
+        const optionElement = document.createElement("option");
+        optionElement.setAttribute("value", country.name);
+        optionElement.innerHTML = country.name;
+
+        selectElement.appendChild(optionElement);
+      });
+    })
+    .catch((err) => {
+      console.log("Error occurred while fetching countries", err);
+    });
+}
+function insert() {
+  $(document).ready(() => {
+    //make an array of languages to insert multiple checkbox values of languages
+    let languages = [];
+    $("input[name=languages]").each(() => {
+      if ($(this).is("checked")) {
+        languages.push($(this).val());
+      }
+    });
+    $.ajax({
+      url: "",
+      type: "POST",
+      data: {
+        //get input values to insert
+        name: $("input[name=name]").val(),
+        email: $("input[name=email]").val(),
+        country: $("input[name=country]").val(),
+        gender: $("input[name=gender]:checked").val(),
+        languages: languages.toString(),
+      },
+    });
+  });
+}
+
 $("document").ready(() => {
+  loadCountriesSelect();
   $("#form").submit((e) => {
     e.preventDefault();
     let nameInput = $("#name").val();
@@ -42,6 +93,7 @@ function chooseCountry() {
 
   xhr.send();
 }
+
 // use query selector method to select the form
 // const form = document.querySelector("form");
 // add eventlistener to the form submit button to trigger that event

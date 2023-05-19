@@ -52,7 +52,7 @@
     <!-- customized bootrap stylesheet -->
     <link rel="stylesheet" href="../css/bootrap.min.css" />
 </head>
-<body>
+<body >
         <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block ">
       <div class="row gx-0">
@@ -199,7 +199,7 @@
          <div class="d-flex align-items-center mb-4 d-flex align-items-center justify-content-center flex-shrink-0 bg-white" id="contact-goodbye">
                         </div>
                        
-    <form id="form">
+    <form id="form" method="post" action="" autocomplete="on">
 
       <div class="container-xxl py-5">
         <div class="container">
@@ -255,22 +255,33 @@
                         <div class="row g-2 background-image">
                            <div class="form-menu">
                               <label for="country">
-                                <select  style="overflow-y: auto;
-                                                      width: 500px;
+                                <select id="countries-selector" required style="
+                                                      width: 100%;
                                                                                   
                                                       ">
-                                    <option value="" name="country"    id="country" selected hidded required >Select Country</option>
-                                    <option value="USA">USA</option>
-                                    <option value="UK">UK</option>
-                                    <option value="INDIA">INDIA</option>
-                                    <option value="EUROPE">EUROPE</option>
-                                    <option value="KENYA">KENYA</option>
+                                    <option value="" name="country"   required id="country" selected hidded required >Select Country</option>
+                                    <option value="USA">KENYA</option>
+                                    <option value="UK">UGANDA</option>
+                                    <option value="INDIA">TANZANIA</option>
+                                    <option value="EUROPE">RWANDA</option>
+                                    <option value="KENYA">BURUNDI</option>
 
 
                                     </select>
                               </label>
                             </div>
-                          
+                             
+                           <div class="form-menu">
+
+                               <label for="language" required ></label>
+                              
+                                    <input type="radio" name="language"  required value="english"  > English
+                                    <input type="radio" name="language"  value="swahili" style="margin-left: 0.5rem;"> Kiswahili
+                                    <input type="radio" name="language"  value="french" style="margin-left: 0.5rem;"> French
+                                    <input type="radio" name="language"  value="spanish" style="margin-left: 0.5rem;"> Spanish
+
+                           </div>
+                           
                           <div class="col-12">
                             <div class="form-menu">
                               <label for="name"></label>
@@ -290,7 +301,7 @@
                                 </div>
                               </div>
                               <div class="col-12">
-                                <button class="btn btn-primary w-100 py-1" type="submit" id="submit-btn" style="border-radius: 2rem;">Send</button>
+                                <button class="btn btn-primary w-100 py-1" name="button" type="submit" onclick="insert()" id="submit-btn" style="border-radius: 2rem;">Send</button>
                               </div>
                               
                         </div>
