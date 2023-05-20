@@ -373,21 +373,21 @@
     </div>
     <!-- Service End -->
      
-       <!-- Contact Start -->
+        <!-- Contact Start -->
         <!-- action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post" -->
-        
+         <div class="d-flex align-items-center mb-4 d-flex align-items-center justify-content-center flex-shrink-0 bg-white" id="contact-goodbye">
+                        </div>
                        
-    <form id="form">
+    <form id="form" method="post" action="" autocomplete="on">
 
-      <div class="container-xxl py-5" id="fade-contact-main">
+      <div class="container-xxl py-5">
         <div class="container">
         
 
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
-                <h1 class="mb-5 text-primary" id="hide-one">Contact For Any Query</h1>
-                <h6 class="section-title bg-white text-center text-info px-3"  style="align-content: end;"></h6>
-                <h2 id="success" style="color:blue;font-size: 10px;"></h2>
+                <h1 class="mb-5 text-primary">Contact For Any Query</h1>
+                <h6 class="section-title bg-white text-center text-info px-3" id="contact-success" style="align-content: end;"></h6>
 
             </div>
             <div class="row g-4">
@@ -432,36 +432,51 @@
                
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="row g-2 background-image">
-                          
-                          <div class="col-md-12">
-                            <div class="footer-menu">
+                          <div class="col-12">
+                            <div class="form-menu">
+
+                              <label for="country" style="margin-bottom: 1rem;">Select Country
+                                <select id="countries-selector" onclick="loadCountriesSelect()" required style="padding-top: 1rem;padding-bottom: 1rem;width: 393px;">
+                                    </select>
+                              </label>
+                          </div>
+                          </div>
+                           <div class="form-menu">
+
+                               <label for="language" required ></label>
+                              
+                                    <input type="radio" name="language"  required value="english"  > English
+                                    <input type="radio" name="language"  value="swahili" style="margin-left: 0.5rem;"> Kiswahili
+                                    <input type="radio" name="language"  value="french" style="margin-left: 0.5rem;"> French
+                                    <input type="radio" name="language"  value="spanish" style="margin-left: 0.5rem;"> Spanish
+
+                           </div>
+                           
+                          <div class="col-12">
+                            <div class="form-menu">
                               <label for="name"></label>
-                              <input type="text" class="form-control"  placeholder="your name" name="name" id="name" required style="color:black">
+                              <input type="text" class="form-control"   placeholder="your name" name="name" id="name" required style="color:black">
                             </div>
                             </div>
                             <div class="col-12">
                               <div class="form-menu">
                                 <label for="email"></label>
-                                    <input class="form-control"  name="email" placeholder="your email address" id="email" required  style="height: 70px;color:black">
+                                    <input class="form-control"  name="email" id="email"  placeholder="your email address" required  style="height: 70px;color:black">
                                 </div>
                             </div>
-                             <div class="col-12">
-                              <div class="form-menu">
-                                <label for="email"></label>
-                                    <input class="form-control"  name="country" placeholder="your country" id="country" required style="height: 70px;color:black">
-                                </div>
-                            </div>
-                            
                             <div class="col-12">
-                                <div class="form-menu">
-                                    <input class="form-control"  name="message" placeholder="write your message here" id="message" required style="height: 100px;color:black"></input>
-                                    <label for="message"></label>
+                              <div class="form-menu">
+                                  <label for="message"></label>
+                                    <input class="form-control"  name="message" id="message" required  placeholder="write your message here" style="height: 100px;color:black"></input>
                                 </div>
                               </div>
-                             
                               <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit" id="submit-btn" style="border-radius: 2rem;">Submit</button>
+                                <button class="btn btn-primary w-100 py-1" name="button" type="submit" onclick="insert()" id="submit-btn" style="border-radius: 2rem;">Send</button>
                               </div>
+                              
+                        </div>
+                             
+                              
                             </div>
                           </div>
                           
@@ -472,6 +487,7 @@
                   </form>
                   
                   <!-- Contact End -->
+
     <!-- Booking Start -->
     <form action="https://formsubmit.co/61fa91cbd6902ec792872e0849fcb342" method="post">
       <!-- determine what form layout received from the email box -->

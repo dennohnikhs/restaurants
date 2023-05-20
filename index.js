@@ -17,6 +17,27 @@ function showCountries() {
 
   xhr.send();
 }
+function loadCountriesSelect() {
+  $("document").ready(() => {
+    fetch("https://restcountries.com/v2/all")
+      .then((res) => res.json())
+      .then((countries) => {
+        const selectElement = document.getElementById("countries-selector");
+        selectElement.innerHTML = "";
+
+        countries.forEach((country) => {
+          const optionElement = document.createElement("option");
+          optionElement.setAttribute("value", country.name);
+          optionElement.innerHTML = country.name;
+
+          selectElement.appendChild(optionElement);
+        });
+      })
+      .catch((err) => {
+        console.log("Error occurred while fetching countries", err);
+      });
+  });
+}
 
 $("document").ready(() => {
   $("#form").submit((e) => {
